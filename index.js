@@ -6,9 +6,9 @@ const port = 3000;
 const server = http.createServer((req, res) => {
 
     if (req.url === '/'){//요청 객체
-        res.statusCode = 200;
+        res.statusCode = 200; //대답 코드
         res.setHeader('Content-Type', 'text/plain');
-        res.end('Hello World\n');
+        res.end('Hello World\n'); // response body
     } else if (req.url === '/users') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain');
